@@ -1,0 +1,52 @@
+.clearSearch {
+  fill: currentColor;
+  right: 10px;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__links {
+  color: black;
+  text-decoration: none;
+}
+
+.header__logo {
+  width: 190px;
+  margin: 15px;
+}
+
+.header__searchBar {
+  align-items: center;
+  background: #faf9f8;
+  border: 1px solid #e0dfde;
+  border-radius: 3px;
+  display: flex;
+  height: 40px;
+  margin: 0;
+  position: relative;
+  width: 600px;
+}
+
+.header__searchIcon {
+  margin-left: 5px;
+}
+
+.header__searchInput {
+  appearance: none;
+  background: none;
+  border: 0;
+  font-size: 17px;
+  margin-left: 5px;
+  outline: none;
+  width: 100%;
+}
+
+.phoneNumber {
+  color: #227ca4;
+}

@@ -1,0 +1,17 @@
+.body__container {
+  display: flex;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.body__imageLarge {
+  padding: 15px;
+  width: 892px;
+}
+
+.body__imageSmall {
+  right: 20px;
+  padding: 15px;
+  position: absolute;
+  width: 458px;
+}
