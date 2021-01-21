@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Body from "./Body";
 import Header from "./Header";
 import NavBar from "./NavBar";
+import ValueAds from "./ValueAds";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Header />
             <NavBar />
             <Body />
+            <ValueAds />
           </Route>
         </Switch>
       </div>

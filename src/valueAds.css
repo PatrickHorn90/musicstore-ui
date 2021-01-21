@@ -1,0 +1,25 @@
+.valueAds {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.valueAds__links {
+  display: flex;
+  margin-top: 20px;
+}
+
+.valueAds__link {
+  border: 2px solid #eeebe7;
+  border-radius: 6px;
+  color: #227ca4;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 5px;
+  padding: 45px 25px 35px;
+  text-decoration: none;
+}
+
+.valueAds__link:hover {
+  border-color: #227ca4;
+}
