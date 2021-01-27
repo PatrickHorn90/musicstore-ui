@@ -12,7 +12,7 @@ function ValueAds() {
         <Link className="valueAds__link">Fast, FREE Shipping</Link>
         <Link className="valueAds__link">FREE Tech Support</Link>
         <Link className="valueAds__link">FREE 2-Year Warranty</Link>
-        <Link className="valueAds__link">Easy PAyments</Link>
+        <Link className="valueAds__link">Easy Payments</Link>
       </div>
     </div>
   );

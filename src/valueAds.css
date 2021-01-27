@@ -1,12 +1,12 @@
 .valueAds {
   text-align: center;
   font-size: 30px;
-  margin-bottom: 30px;
 }
 
 .valueAds__links {
   display: flex;
-  margin-top: 20px;
+  justify-content: space-evenly;
+  margin: 20px 40px;
 }
 
 .valueAds__link {
