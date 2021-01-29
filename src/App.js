@@ -5,6 +5,7 @@ import { useStateValue } from "./StateProvider";
 import Header from "./Header";
 import HomePage from "./HomePage";
 import NavBar from "./NavBar";
+import Guitars from "./Guitars";
 
 function App() {
   const [{ basket }] = useStateValue();
@@ -14,6 +15,9 @@ function App() {
         <Header />
         <NavBar />
         <Switch>
+          <Route path="/guitars">
+            <Guitars />
+          </Route>
           <Route path="/contact">
             <h1>Contact Page</h1>
           </Route>
