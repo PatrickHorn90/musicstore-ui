@@ -39,7 +39,7 @@ function Header() {
       </Link>
       <Link to="/checkout" className="header__shoppingCartLink">
         <ShoppingCartIcon fontSize="large" />
-        {basket.length}
+        {basket?.length}
       </Link>
     </nav>
   );
