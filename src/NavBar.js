@@ -13,20 +13,20 @@ function NavBar() {
         <h4>Shop By Category</h4>
       </Link> */}
       <FormControl>
-        <InputLabel id="dropdown">
+        <InputLabel id="dropdownLabel">
           <h4>Shop by Category</h4>
         </InputLabel>
         <Select>
-          <Link to="/guitars">
+          <Link to="/guitars" className="dropdownCategory">
             <MenuItem>Guitars</MenuItem>
           </Link>
-          <Link>
+          <Link className="dropdownCategory">
             <MenuItem>Bass</MenuItem>
           </Link>
-          <Link>
+          <Link className="dropdownCategory">
             <MenuItem>Drums</MenuItem>
           </Link>
-          <Link>
+          <Link className="dropdownCategory">
             <MenuItem>Keyboards</MenuItem>
           </Link>
         </Select>

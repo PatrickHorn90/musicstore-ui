@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-around;
   padding: 10px;
+  height: 40px;
 }
 
 .navBar__link {
@@ -25,11 +26,11 @@
   text-decoration: none;
 }
 
-#dropdown {
+#dropdownLabel {
   color: black;
 }
 
-#productCategories {
-  display: flex;
-  flex-direction: row;
+.dropdownCategory {
+  color: black;
+  text-decoration: none;
 }

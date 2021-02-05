@@ -1,3 +1,8 @@
 * {
   margin: 0;
 }
+
+.guitarsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
