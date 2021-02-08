@@ -1,0 +1,52 @@
+.guitarContainer {
+  border: 1px solid #ddd;
+  padding: 10px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  margin: 10px;
+}
+
+.guitar__info > h3 {
+  text-align: center;
+  margin: 10px 0px 5px 0px;
+}
+
+.guitarContainer > img {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.guitar__rating {
+  display: flex;
+  margin: 5px 0px;
+}
+
+.guitar__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guitar__price {
+  color: #d73133;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.addToCartBtn {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #707070;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 5px;
+  padding: 3px 10px 2px;
+}
+
+.addToCartBtn:hover {
+  border-color: rgb(43, 162, 241);
+  color: rgb(16, 129, 235);
+}

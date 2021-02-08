@@ -9,9 +9,6 @@ import "./NavBar.css";
 function NavBar() {
   return (
     <div className="navBar__container">
-      {/* <Link className="navBar__link">
-        <h4>Shop By Category</h4>
-      </Link> */}
       <FormControl>
         <InputLabel id="dropdownLabel">
           <h4>Shop by Category</h4>
