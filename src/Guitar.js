@@ -2,7 +2,7 @@ import React from "react";
 import { useStateValue } from "./StateProvider";
 import "./Guitar.css";
 
-const Guitar = (id, name, price, rating, img) => {
+const Guitar = ({ id, name, price, rating, img }) => {
   const [{ basket }, dispatch] = useStateValue();
 
   const addToCart = () => {

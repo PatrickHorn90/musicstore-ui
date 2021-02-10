@@ -1,3 +1,8 @@
+.guitars__page {
+  display: flex;
+  flex-direction: column;
+}
+
 .guitars__container {
   display: flex;
   justify-content: space-evenly;
