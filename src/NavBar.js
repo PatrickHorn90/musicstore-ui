@@ -5,12 +5,21 @@ import MenuItem from "@material-ui/core/MenuItem";
 import FormControl from "@material-ui/core/FormControl";
 import Select from "@material-ui/core/Select";
 import "./NavBar.css";
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  formControl: {
+    minWidth: 170,
+    marginBottom: 16,
+  },
+}));
 
 function NavBar() {
+  const classes = useStyles();
   return (
     <div className="navBar__container">
-      <FormControl id="navBar__productDropdown">
-        <InputLabel id="dropdownLabel">
+      <FormControl className={classes.formControl}>
+        <InputLabel className="dropdownLabel">
           <h4>Shop by Category</h4>
         </InputLabel>
         <Select>
