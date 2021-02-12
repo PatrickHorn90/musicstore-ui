@@ -1,11 +1,9 @@
 .guitarContainer {
-  border: 1px solid #ddd;
   padding: 10px 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 200px;
-  margin: 10px;
 }
 
 .guitar__info > h3 {

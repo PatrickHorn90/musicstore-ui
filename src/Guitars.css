@@ -2,10 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 15px;
-}
-.guitars__header {
-  margin-left: 11px;
+  margin: 25px;
 }
 
 .guitars__header > h1 {
@@ -19,7 +16,48 @@
   margin: 5px 0px;
 }
 
-.guitars__container {
+.guitars__body {
   display: flex;
-  justify-content: space-evenly;
+  margin-top: 10px;
+}
+
+.guitars__container {
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.guitars__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.filters__container {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  border-right: 1px solid #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.filters__container > h3 {
+  border-bottom: 1px solid #e7e7e7;
+  color: #156da1;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 20px 15px 10px;
+}
+
+.filters__container > h2 {
+  border-bottom: 1px solid #e7e7e7;
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 20px 15px 10px;
+}
+
+.filters__body {
+  padding: 20px 15px 10px;
 }

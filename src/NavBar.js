@@ -9,7 +9,7 @@ import "./NavBar.css";
 function NavBar() {
   return (
     <div className="navBar__container">
-      <FormControl>
+      <FormControl id="navBar__productDropdown">
         <InputLabel id="dropdownLabel">
           <h4>Shop by Category</h4>
         </InputLabel>

@@ -34,3 +34,7 @@
   color: black;
   text-decoration: none;
 }
+
+#navBar__productDropdown {
+  display: flex;
+}
