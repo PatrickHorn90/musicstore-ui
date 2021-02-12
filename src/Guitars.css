@@ -47,7 +47,7 @@
   color: #156da1;
   font-size: 25px;
   font-weight: 500;
-  padding: 20px 15px 10px;
+  padding: 20px 20px 10px 15px;
 }
 
 .filters__container > h2 {
@@ -55,7 +55,7 @@
   color: black;
   font-size: 20px;
   font-weight: 400;
-  padding: 20px 15px 10px;
+  padding: 20px 20px 10px 15px;
 }
 
 .filters__body {
