@@ -95,7 +95,7 @@ const Guitars = () => {
               img="https://media.sweetwater.com/api/i/f-webp__q-85__ha-fdb262a4aa8d74aa__hmac-255110e32a918fd696757d2e6e86be31cd70fb68/images/guitars/SECU24BGSV/CTIC38879/CTIC38879-body-large.jpg.auto.webp"
             />
             <Guitar
-              id="02071997"
+              id="02071994"
               name="Fender American Professional - Mystic Surf Green"
               price={1499}
               rating={5}
@@ -104,35 +104,35 @@ const Guitars = () => {
           </div>
           <div className="guitars__row">
             <Guitar
-              id="02071994"
+              id="02071995"
               name="Kramer Snake Sabo Baretta Outfit - Green"
               price={2499}
               rating={4}
               img="https://media.sweetwater.com/api/i/f-webp__b-new__w-300__h-450__bg-ffffff__q-85__ha-77021fe26df20621__hmac-0d8c074cd1dca15a00c0f5b837ff5c6ecb181f2f/images/items/750/KBVDSSNBF-large.jpg.auto.webp"
             />
             <Guitar
-              id="02071995"
+              id="02071996"
               name="Fender Player Strat - Buttercream"
               price={749}
               rating={3}
               img="https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-450__bg-ffffff__q-85__ha-35f02ee6c0e30264__hmac-0b3b8cbd385f3e8123f74b2e31e88608c75ed1f7/images/items/750/StratPMBCR-large.jpg.auto.webp"
             />
             <Guitar
-              id="02071996"
+              id="02071997"
               name="PRS SE Standard 24 - Translucent Blue"
               price={579}
               rating={4}
               img="https://media.sweetwater.com/api/i/f-webp__b-new__w-300__h-450__bg-ffffff__q-85__ha-9136940a0bb5e899__hmac-6cd7cc67981ad9655b9284d2003dc61c4ef99e16/images/items/750/SEStd24TBG-large.jpg.auto.webp"
             />
             <Guitar
-              id="02071997"
+              id="02071998"
               name="Danelectro 59X12 12-String"
               price={569}
               rating={5}
               img="https://media.sweetwater.com/api/i/f-webp__q-85__ha-99e18c26c978bb27__hmac-4d54e5e5bc51564c30d818419af025f21a40dd49/images/guitars/59X12VC/084096/084096-body-large.jpg.auto.webp"
             />
             <Guitar
-              id="02071997"
+              id="02071999"
               name="Gibson Explorer - Antique Natural"
               price={1699}
               rating={4}
@@ -141,35 +141,35 @@ const Guitars = () => {
           </div>
           <div className="guitars__row">
             <Guitar
-              id="0207199"
+              id="02072000"
               name="Ibanez Joe Satriani Signature"
               price={4999}
               rating={5}
               img="https://media.sweetwater.com/api/i/f-webp__q-85__ha-43eff102a6573bc0__hmac-b32572f57d7e808e96089080e2e9d63152c2f264/images/guitars/JS1CR/210001F2015136/210001F2015136-body-large.jpg.auto.webp"
             />
             <Guitar
-              id="02071997"
+              id="02072001"
               name="Gibson Les Paul Standard Sunburst"
               price={2499}
               rating={5}
               img="https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-450__bg-ffffff__q-85__ha-5088c4477a72b52d__hmac-0df20e47ab01b82ee00cc7b083ec3936f7d4eef1/images/items/750/LPS6UBNH-large.jpg.auto.webp"
             />
             <Guitar
-              id="02071997"
+              id="02072002"
               name="Gibson SG Standard Vintage Cherry"
               price={1799}
               rating={5}
               img="https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-450__bg-ffffff__q-85__ha-340bda9f117d6b93__hmac-e15828aa6c1290c85fa01a695fadf29168fc95d3/images/items/750/SG61VENH-large.jpg.auto.webp"
             />
             <Guitar
-              id="02071997"
+              id="02072003"
               name="Fender Player Telecaster"
               price={749}
               rating={3}
               img="https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-450__bg-ffffff__q-85__ha-5a38ed4be30d6e45__hmac-cd85c2ddf44a03e50cd3b0ab745d923370f78ab8/images/items/750/TelePMTP-large.jpg.auto.webp"
             />
             <Guitar
-              id="02071997"
+              id="02072004"
               name="Ibanez Prestige S6570SK - Sunset Burst"
               price={1999}
               rating={5}

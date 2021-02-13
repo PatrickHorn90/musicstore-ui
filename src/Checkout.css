@@ -1,0 +1,30 @@
+.emptyCartBackground {
+  align-items: center;
+  background-image: url(https://media.sweetwater.com/cart/empty-cart-bg-lines.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.emptyGuitarCase {
+  padding: 30px;
+  width: 404px;
+}
+
+.emptyCartFeedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.emptyCartFeedback > h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.emptyCartFeedback > h4 {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 300;
+}
