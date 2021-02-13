@@ -94,6 +94,13 @@ const Guitars = () => {
               rating={4}
               img="https://media.sweetwater.com/api/i/f-webp__q-85__ha-fdb262a4aa8d74aa__hmac-255110e32a918fd696757d2e6e86be31cd70fb68/images/guitars/SECU24BGSV/CTIC38879/CTIC38879-body-large.jpg.auto.webp"
             />
+            <Guitar
+              id="02071997"
+              name="Fender American Professional - Mystic Surf Green"
+              price={1499}
+              rating={5}
+              img="https://media.sweetwater.com/api/i/f-webp__q-85__ha-6bde3cb9e49834e3__hmac-5442fc3e2ae66504cd5a05f0663106604425e541/images/guitars/StratAP2MSG/US20084798/US20084798-body-large.jpg.auto.webp"
+            />
           </div>
           <div className="guitars__row">
             <Guitar
@@ -123,6 +130,50 @@ const Guitars = () => {
               price={569}
               rating={5}
               img="https://media.sweetwater.com/api/i/f-webp__q-85__ha-99e18c26c978bb27__hmac-4d54e5e5bc51564c30d818419af025f21a40dd49/images/guitars/59X12VC/084096/084096-body-large.jpg.auto.webp"
+            />
+            <Guitar
+              id="02071997"
+              name="Gibson Explorer - Antique Natural"
+              price={1699}
+              rating={4}
+              img="https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-450__bg-ffffff__q-85__ha-45cc341d14def6f5__hmac-757f1458cc24743d39b81e0dfc0ddbcfc49630bf/images/items/750/DSXANCH1-large.jpg.auto.webp"
+            />
+          </div>
+          <div className="guitars__row">
+            <Guitar
+              id="0207199"
+              name="Ibanez Joe Satriani Signature"
+              price={4999}
+              rating={5}
+              img="https://media.sweetwater.com/api/i/f-webp__q-85__ha-43eff102a6573bc0__hmac-b32572f57d7e808e96089080e2e9d63152c2f264/images/guitars/JS1CR/210001F2015136/210001F2015136-body-large.jpg.auto.webp"
+            />
+            <Guitar
+              id="02071997"
+              name="Gibson Les Paul Standard Sunburst"
+              price={2499}
+              rating={5}
+              img="https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-450__bg-ffffff__q-85__ha-5088c4477a72b52d__hmac-0df20e47ab01b82ee00cc7b083ec3936f7d4eef1/images/items/750/LPS6UBNH-large.jpg.auto.webp"
+            />
+            <Guitar
+              id="02071997"
+              name="Gibson SG Standard Vintage Cherry"
+              price={1799}
+              rating={5}
+              img="https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-450__bg-ffffff__q-85__ha-340bda9f117d6b93__hmac-e15828aa6c1290c85fa01a695fadf29168fc95d3/images/items/750/SG61VENH-large.jpg.auto.webp"
+            />
+            <Guitar
+              id="02071997"
+              name="Fender Player Telecaster"
+              price={749}
+              rating={3}
+              img="https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-450__bg-ffffff__q-85__ha-5a38ed4be30d6e45__hmac-cd85c2ddf44a03e50cd3b0ab745d923370f78ab8/images/items/750/TelePMTP-large.jpg.auto.webp"
+            />
+            <Guitar
+              id="02071997"
+              name="Ibanez Prestige S6570SK - Sunset Burst"
+              price={1999}
+              rating={5}
+              img="https://media.sweetwater.com/api/i/f-webp__q-85__ha-3751d77c075083bf__hmac-893e63195e8dec744588918b6b56468cf19c9d3e/images/guitars/S6570SKSTB/210002F2030662/210002F2030662-body-large.jpg.auto.webp"
             />
           </div>
         </div>
