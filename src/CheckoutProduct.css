@@ -1,0 +1,9 @@
+.product__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product__body {
+  display: flex;
+  justify-content: space-around;
+}

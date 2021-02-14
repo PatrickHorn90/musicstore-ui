@@ -1,11 +1,13 @@
 import React from "react";
 import { useStateValue } from "./StateProvider";
+import CheckoutProduct from "./CheckoutProduct";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import "./Checkout.css";
 
-function Checkout() {
+function Checkout({ name, price, img }) {
   const [{ basket }] = useStateValue();
   return (
-    <div className="checkout__container">
+    <div className="checkout__page">
       {basket.length === 0 ? (
         <div className="emptyCartBackground">
           <img
@@ -19,7 +21,16 @@ function Checkout() {
           </div>
         </div>
       ) : (
-        <h2>Your cart has {basket.length} items in it.</h2>
+        <div className="checkout__container">
+          <div className="col1">
+            <div className="col1__cart">
+              <ShoppingCartIcon />
+            </div>
+            <h2>Shopping Cart</h2>
+          </div>
+          <CheckoutProduct />
+          <h2>Your cart has {basket.length} items in it.</h2>
+        </div>
       )}
     </div>
   );
