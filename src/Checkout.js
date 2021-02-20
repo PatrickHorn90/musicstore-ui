@@ -4,7 +4,7 @@ import CheckoutProduct from "./CheckoutProduct";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import "./Checkout.css";
 
-function Checkout({ name, price, img }) {
+const Checkout = () => {
   const [{ basket }] = useStateValue();
   return (
     <div className="checkout__page">
@@ -28,12 +28,19 @@ function Checkout({ name, price, img }) {
             </div>
             <h2>Shopping Cart</h2>
           </div>
-          <CheckoutProduct />
-          <h2>Your cart has {basket.length} items in it.</h2>
+          {basket.map((item) => (
+            <CheckoutProduct
+              id={item.id}
+              img={item.img}
+              name={item.name}
+              rating={item.rating}
+              price={item.price}
+            />
+          ))}
         </div>
       )}
     </div>
   );
-}
+};
 
 export default Checkout;
