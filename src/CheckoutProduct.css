@@ -7,10 +7,28 @@
   align-items: center;
   background-color: #edf1f9;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
-.checkoutProduct__header > p {
+.header__qty {
+  width: 60px;
+}
+
+.header__price {
+  width: 90px;
+}
+
+.header__left {
+  text-align: left;
+}
+
+.header__right {
+  text-align: right;
+  display: flex;
+}
+
+.header__left > p,
+.header__right > p {
   color: #0b3c5b;
   font-size: 12px;
   font-weight: 400;

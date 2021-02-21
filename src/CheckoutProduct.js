@@ -14,9 +14,13 @@ const CheckoutProduct = ({ id, name, description, price, img, rating }) => {
   return (
     <div className="checkoutProduct__container">
       <div className="checkoutProduct__header">
-        <p>PRODUCT</p>
-        <p>QTY</p>
-        <p>PRICE</p>
+        <div className="header__left">
+          <p>PRODUCT</p>
+        </div>
+        <div className="header__right">
+          <p className="header__qty">QTY</p>
+          <p className="header__price">PRICE</p>
+        </div>
       </div>
       <div className="checkoutProduct__body">
         <img src={img} alt="checkoutProduct__img" />
