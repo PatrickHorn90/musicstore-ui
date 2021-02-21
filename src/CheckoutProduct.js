@@ -22,7 +22,7 @@ const CheckoutProduct = ({ id, name, description, price, img, rating }) => {
         <img src={img} alt="checkoutProduct__img" />
         <div className="checkoutProduct__info">
           <h3>{name}</h3>
-          <p>{description}</p>
+          <p className="checkoutProduct__description">{description}</p>
           <div className="checkoutProduct__rating">
             {Array(rating)
               .fill()
@@ -35,7 +35,7 @@ const CheckoutProduct = ({ id, name, description, price, img, rating }) => {
           <input type="number" min="1" value="1" />
           <button onClick={removeFromCart}>Remove</button>
         </div>
-        <div className="checkoutProduct__price">{price}</div>
+        <div className="checkoutProduct__price">${price}</div>
       </div>
     </div>
   );
