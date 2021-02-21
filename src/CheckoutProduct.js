@@ -36,7 +36,7 @@ const CheckoutProduct = ({ id, name, description, price, img, rating }) => {
           </div>
         </div>
         <div className="checkoutProduct__qty">
-          <input type="number" min="1" value="1" />
+          <input type="number" min="1" />
           <button onClick={removeFromCart}>Remove</button>
         </div>
         <div className="checkoutProduct__price">${price}</div>
