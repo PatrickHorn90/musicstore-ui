@@ -33,6 +33,7 @@ const Checkout = () => {
               id={item.id}
               img={item.img}
               name={item.name}
+              description={item.description}
               rating={item.rating}
               price={item.price}
             />

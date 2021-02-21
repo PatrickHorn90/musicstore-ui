@@ -1,14 +1,22 @@
 .guitarContainer {
-  padding: 10px 2px;
+  padding: 11px 11px 50px 11px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
   width: 200px;
 }
 
 .guitar__info > h3 {
   text-align: center;
   margin: 10px 0px 5px 0px;
+}
+
+.guitar__description {
+  color: #707070;
+  font-size: 12px;
+  margin: 10px 0;
+  text-align: center;
 }
 
 .guitarContainer > img {
@@ -25,6 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 5px;
 }
 
 .guitar__price {
@@ -36,12 +45,14 @@
 .addToCartBtn {
   background: #fff;
   border: 1px solid #ccc;
+  bottom: 15px;
   color: #707070;
   cursor: pointer;
   font-size: 12px;
   font-weight: 600;
   margin-top: 5px;
   padding: 3px 10px 2px;
+  position: absolute;
 }
 
 .addToCartBtn:hover {

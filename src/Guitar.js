@@ -2,7 +2,7 @@ import React from "react";
 import { useStateValue } from "./StateProvider";
 import "./Guitar.css";
 
-const Guitar = ({ id, name, price, rating, img }) => {
+const Guitar = ({ id, name, description, price, rating, img }) => {
   const [{ basket }, dispatch] = useStateValue();
 
   const addToCart = () => {
@@ -11,6 +11,7 @@ const Guitar = ({ id, name, price, rating, img }) => {
       item: {
         id: id,
         name: name,
+        description: description,
         price: price,
         rating: rating,
         img: img,
@@ -22,6 +23,7 @@ const Guitar = ({ id, name, price, rating, img }) => {
       <img src={img} alt="guitarImage" />
       <div className="guitar__info">
         <h3>{name}</h3>
+        <p className="guitar__description">{description}</p>
         <p className="guitar__price">
           <small>$</small>
           {price}
