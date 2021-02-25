@@ -2,6 +2,7 @@ import React from "react";
 import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import Subtotal from "./Subtotal";
 import "./Checkout.css";
 
 const Checkout = () => {
@@ -40,6 +41,7 @@ const Checkout = () => {
           ))}
         </div>
       )}
+      {basket.length > 0 && <Subtotal />}
     </div>
   );
 };

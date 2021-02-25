@@ -31,7 +31,7 @@
 
 .checkout__container {
   box-sizing: border-box;
-  margin: 20px auto;
+  margin: 20px auto 0px;
   max-width: 100%;
   width: 970px;
   min-width: 700px;
