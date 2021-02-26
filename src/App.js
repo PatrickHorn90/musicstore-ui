@@ -1,5 +1,4 @@
-import React from "react";
-import "./App.css";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./Checkout";
 import Guitars from "./Guitars";
@@ -8,9 +7,34 @@ import HomePage from "./HomePage";
 import Login from "./Login";
 import NavBar from "./NavBar";
 import { useStateValue } from "./StateProvider";
+import { auth } from "./firebase";
+import "./App.css";
 
 function App() {
-  const [{ basket }] = useStateValue();
+  const [{ user }, dispatch] = useStateValue();
+
+  const unsubscribe = useEffect(() => {
+    auth.onAuthStateChanged((authUser) => {
+      if (authUser) {
+        // logged in
+        dispatch({
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
+        // logged out
+        dispatch({
+          type: "SET_USER",
+          user: null,
+        });
+      }
+    });
+    return () => {
+      unsubscribe();
+    };
+  }, []);
+  console.log("USER IS >> ", user);
+
   return (
     <Router>
       <div className="app">

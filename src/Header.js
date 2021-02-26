@@ -4,9 +4,17 @@ import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useStateValue } from "./StateProvider";
+import { auth } from "./firebase";
 
 function Header() {
-  const [{ basket }] = useStateValue();
+  const [{ basket, user }] = useStateValue();
+
+  const login = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
+
   return (
     <nav className="header">
       <Link to="/">
@@ -34,8 +42,9 @@ function Header() {
         </Link>
         <p> We're here to help</p>
       </div>
-      <Link to="/login" className="header__links">
-        <h4>Login</h4>
+      <Link to={!user && "/login"} className="header__links">
+        {user && `Hi ${user?.email}`}
+        <h4 onClick={login}>{user ? "LogOut" : "Login"}</h4>
       </Link>
       <Link to="/checkout" className="header__shoppingCartLink">
         <ShoppingCartIcon fontSize="large" />
