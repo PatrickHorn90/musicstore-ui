@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  width: 930px;
+}
+
+.login__header {
+  background: #00325c;
+  border: 1px solid #061831;
+  border-bottom-color: #000;
+  border-radius: 5px 5px 0 0;
+  color: #f9c95c;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.login__body {
+  border: solid 1px #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login {
+  padding: 20px;
+  width: 438px;
+}
+
+.login > form > input {
+  border: 1px solid #a8a8a8;
+  border-radius: 2px;
+  padding: 5px 10px;
+  width: 90%;
+}
+
+.login > h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.login__password > p {
+  color: #227ca4;
+  cursor: pointer;
+  font-size: 13px;
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+.login__password {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.login__password > input {
+  border: 1px solid #a8a8a8;
+  border-radius: 2px;
+  padding: 5px 10px;
+  width: 260px;
+}
+
+.login > form > button {
+  background-color: #4e8410;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  margin-top: 15px;
+  padding: 5px;
+  width: 140px;
+}
+
+.register {
+  background: #e7eff7;
+  padding: 20px;
+  width: 408px;
+}
+
+.register > h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.register > p {
+  margin-bottom: 15px;
+  color: #2e2d2b;
+  font-size: 13px;
+}
+
+.register > button {
+  background-color: #0072ba;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  height: 30px;
+  padding: 5px;
+  width: 140px;
+}

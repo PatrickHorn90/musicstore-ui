@@ -32,10 +32,10 @@ function Header() {
         <Link to="/contact" className="header__links">
           <h4>Contact Us</h4>
         </Link>
-        We're here to help
+        <p> We're here to help</p>
       </div>
       <Link to="/login" className="header__links">
-        <h4>Account</h4>
+        <h4>Login</h4>
       </Link>
       <Link to="/checkout" className="header__shoppingCartLink">
         <ShoppingCartIcon fontSize="large" />

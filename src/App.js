@@ -5,9 +5,12 @@ import Checkout from "./Checkout";
 import Guitars from "./Guitars";
 import Header from "./Header";
 import HomePage from "./HomePage";
+import Login from "./Login";
 import NavBar from "./NavBar";
+import { useStateValue } from "./StateProvider";
 
 function App() {
+  const [{ basket }] = useStateValue();
   return (
     <Router>
       <div className="app">
@@ -24,8 +27,7 @@ function App() {
             <Checkout />
           </Route>
           <Route path="/login">
-            <h1>Login</h1>
-            <h1>Create Account</h1>
+            <Login />
           </Route>
           <Route path="/">
             <HomePage />
