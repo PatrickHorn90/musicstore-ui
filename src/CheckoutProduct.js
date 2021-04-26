@@ -3,7 +3,7 @@ import { useStateValue } from "./StateProvider";
 import "./CheckoutProduct.css";
 
 const CheckoutProduct = ({ id, name, description, price, img, rating }) => {
-  const [{ basket }, dispatch] = useStateValue();
+  const [dispatch] = useStateValue();
 
   const removeFromCart = () => {
     dispatch({
@@ -36,7 +36,7 @@ const CheckoutProduct = ({ id, name, description, price, img, rating }) => {
           </div>
         </div>
         <div className="checkoutProduct__qty">
-          <input type="number" min="1" />
+          <input type="number" value="1" min="1" max="5" step="1" />
           <button onClick={removeFromCart}>Remove</button>
         </div>
         <div className="checkoutProduct__price">${price}</div>

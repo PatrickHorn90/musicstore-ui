@@ -24,7 +24,8 @@
 .guitars__container {
   border: 1px solid #ddd;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   margin-left: 50px;
 }
 
@@ -40,6 +41,7 @@
   display: flex;
   flex-direction: column;
   margin-right: 15px;
+  width: 600px;
 }
 
 .filters__container > h3 {
@@ -60,4 +62,66 @@
 
 .filters__body {
   padding: 20px 15px 10px;
+}
+
+.guitarContainer {
+  padding: 11px 11px 50px 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 200px;
+}
+
+.guitar__info > h3 {
+  text-align: center;
+  margin: 10px 0px 5px 0px;
+}
+
+.guitar__description {
+  color: #707070;
+  font-size: 12px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.guitarContainer > img {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.guitar__rating {
+  display: flex;
+  margin: 5px 0px;
+}
+
+.guitar__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+.guitar__price {
+  color: #d73133;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.addToCartBtn {
+  background: #fff;
+  border: 1px solid #ccc;
+  bottom: 15px;
+  color: #707070;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 5px;
+  padding: 3px 10px 2px;
+  position: absolute;
+}
+
+.addToCartBtn:hover {
+  border-color: rgb(43, 162, 241);
+  color: rgb(16, 129, 235);
 }

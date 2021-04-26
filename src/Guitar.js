@@ -2,14 +2,15 @@ import React from "react";
 import { useStateValue } from "./StateProvider";
 import "./Guitar.css";
 
-const Guitar = ({ id, name, description, price, rating, img }) => {
-  const [{ basket }, dispatch] = useStateValue();
+const Guitar = ({ id, brand, name, description, price, rating, img }) => {
+  const [dispatch] = useStateValue();
 
   const addToCart = () => {
     dispatch({
       type: "ADD_TO_BASKET",
       item: {
         id: id,
+        brand: brand,
         name: name,
         description: description,
         price: price,
