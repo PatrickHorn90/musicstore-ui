@@ -2,8 +2,10 @@ import React from "react";
 import { useStateValue } from "./StateProvider";
 import "./Guitar.css";
 
-const Guitar = ({ id, brand, name, description, price, rating, img }) => {
-  const [dispatch] = useStateValue();
+const Guitar = ({
+  guitar: { id, brand, name, description, price, rating, img },
+}) => {
+  const [{ basket }, dispatch] = useStateValue();
 
   const addToCart = () => {
     dispatch({

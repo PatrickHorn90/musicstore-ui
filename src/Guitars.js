@@ -7,68 +7,23 @@ import Guitar from "./Guitar";
 import "./Guitars.css";
 
 const Guitars = () => {
-  const [filters, setFilters] = useState({
-    danelectroFilter: false,
-    fenderFilter: false,
-    gibsonFilter: false,
-    ibanezFilter: false,
-    kramerFilter: false,
-    prsFilter: false,
-  });
+  const [filterList, setFilterList] = useState([]);
+  console.log(filterList);
 
-  console.log(filters);
-
-  const handleChange = (e) => {
-    setFilters({ ...filters, [e.target.name]: e.target.checked });
-  };
-
-  const noFilters = Object.values(filters).every((filter) => !filter);
-
-  console.log(noFilters);
-
-  const renderFilteredGuitars = () => {
-    let filteredGuitars = [];
-    if (filters.danelectroFilter === true) {
-      filteredGuitars = guitarData.filter(({ brand }) => {
-        return brand === "danelectro";
-      });
-      return filteredGuitars;
-    }
-    if (filters.fenderFilter === true) {
-      filteredGuitars = guitarData.filter(({ brand }) => {
-        return brand === "fender";
-      });
-      return filteredGuitars;
-    }
-    if (filters.gibsonFilter === true) {
-      filteredGuitars = guitarData.filter(({ brand }) => {
-        return brand === "gibson";
-      });
-      return filteredGuitars;
-    }
-    if (filters.ibanezFilter === true) {
-      filteredGuitars = guitarData.filter(({ brand }) => {
-        return brand === "ibanez";
-      });
-      return filteredGuitars;
-    }
-    if (filters.kramerFilter === true) {
-      filteredGuitars = guitarData.filter(({ brand }) => {
-        return brand === "kramer";
-      });
-      return filteredGuitars;
-    }
-    if (filters.prsFilter === true) {
-      filteredGuitars = guitarData.filter(({ brand }) => {
-        return brand === "prs";
-      });
-      return filteredGuitars;
+  const handleCheckbox = (e) => {
+    let filterCopy = [...filterList];
+    if (filterList.includes(e.target.name)) {
+      const index = filterList.indexOf(e.target.name);
+      filterCopy.splice(index, 1);
+      setFilterList(filterCopy);
+    } else {
+      setFilterList([...filterCopy, e.target.name]);
     }
   };
 
-  const renderUnfilteredGuitars = () => {
-    return <div></div>;
-  };
+  const guitars = !filterList.length
+    ? guitarData
+    : guitarData.filter((guitar) => filterList.includes(guitar.brand));
 
   return (
     <div className="guitars__page">
@@ -87,10 +42,9 @@ const Guitars = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    checked={filters.danelectroFilter}
                     color="primary"
-                    onChange={handleChange}
-                    name="danelectroFilter"
+                    onChange={handleCheckbox}
+                    name="danelectro"
                   />
                 }
                 label="Danelectro"
@@ -98,10 +52,9 @@ const Guitars = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    checked={filters.fenderFilter}
                     color="primary"
-                    onChange={handleChange}
-                    name="fenderFilter"
+                    onChange={handleCheckbox}
+                    name="fender"
                   />
                 }
                 label="Fender"
@@ -109,10 +62,9 @@ const Guitars = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    checked={filters.gibsonFilter}
                     color="primary"
-                    onChange={handleChange}
-                    name="gibsonFilter"
+                    onChange={handleCheckbox}
+                    name="gibson"
                   />
                 }
                 label="Gibson"
@@ -120,10 +72,9 @@ const Guitars = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    checked={filters.ibanezFilter}
                     color="primary"
-                    onChange={handleChange}
-                    name="ibanezFilter"
+                    onChange={handleCheckbox}
+                    name="ibanez"
                   />
                 }
                 label="Ibanez"
@@ -131,10 +82,9 @@ const Guitars = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    checked={filters.kramerFilter}
                     color="primary"
-                    onChange={handleChange}
-                    name="kramerFilter"
+                    onChange={handleCheckbox}
+                    name="kramer"
                   />
                 }
                 label="Kramer"
@@ -142,10 +92,9 @@ const Guitars = () => {
               <FormControlLabel
                 control={
                   <Checkbox
-                    checked={filters.prsFilter}
                     color="primary"
-                    onChange={handleChange}
-                    name="prsFilter"
+                    onChange={handleCheckbox}
+                    name="prs"
                   />
                 }
                 label="PRS"
@@ -171,16 +120,8 @@ const Guitars = () => {
           </div>
         </div>
         <div className="guitars__container">
-          {guitarData.map((guitar) => (
-            <Guitar
-              id={guitar.id}
-              brand={guitar.brand}
-              name={guitar.name}
-              description={guitar.description}
-              price={guitar.price}
-              rating={guitar.rating}
-              img={guitar.img}
-            />
+          {guitars.map((guitar) => (
+            <Guitar guitar={guitar} />
           ))}
         </div>
       </div>
