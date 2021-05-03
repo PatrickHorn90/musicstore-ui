@@ -25,8 +25,9 @@
   border: 1px solid #ddd;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 50px;
+  justify-content: flex-start;
+  margin-left: 40px;
+  width: 1120px;
 }
 
 .guitars__row {
@@ -41,7 +42,7 @@
   display: flex;
   flex-direction: column;
   margin-right: 15px;
-  width: 600px;
+  width: 202px;
 }
 
 .filters__container > h3 {
