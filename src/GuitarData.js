@@ -8,7 +8,7 @@ const guitarData = [
     price: 2000.99,
     rating: 5,
     img:
-      "https://media.sweetwater.com/api/i/f-webp__q-85__ha-b90caf6fac872b85__hmac-5600b4cba0315323ec5ed60cab55d7f522e9bc89/images/guitars/TeleHHFMIBC/ICF20001957/ICF20001957-body-large.jpg.auto.webp",
+      "https://media.sweetwater.com/api/i/f-webp__q-85__ha-dd9bf8e177478cd0__hmac-a820ad02f260f5a657a375a150d504d7e1d0098d/images/guitars/TeleHHFMIBC/ICF21000254/ICF21000254-body-large.jpg.auto.webp",
   },
   {
     id: 2,
@@ -41,7 +41,7 @@ const guitarData = [
     price: 829.99,
     rating: 4,
     img:
-      "https://media.sweetwater.com/api/i/f-webp__q-85__ha-fdb262a4aa8d74aa__hmac-255110e32a918fd696757d2e6e86be31cd70fb68/images/guitars/SECU24BGSV/CTIC38879/CTIC38879-body-large.jpg.auto.webp",
+      "https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-300__bg-ffffff__q-85__ha-daf1a2d9fbeade04__hmac-23755de304e700d8d3c79aa18e6471d043017491/images/items/350/SECU24QBGS.jpg.auto.webp",
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const guitarData = [
     price: 1499.99,
     rating: 5,
     img:
-      "https://media.sweetwater.com/api/i/f-webp__q-85__ha-6bde3cb9e49834e3__hmac-5442fc3e2ae66504cd5a05f0663106604425e541/images/guitars/StratAP2MSG/US20084798/US20084798-body-large.jpg.auto.webp",
+      "https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-300__bg-ffffff__q-85__ha-356f14bf702729a2__hmac-eefc72b2348e54c28e9fdabdbf6fc794f9b8e9a8/images/items/350/StratAP2MSG.jpg.auto.webp",
   },
   {
     id: 6,
