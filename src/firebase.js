@@ -1,13 +1,13 @@
 import firebase from "firebase";
 
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyA99WsVskNB0Wq4TeiRyAB--uVPdLmTz4E",
-  authDomain: "sweetwater-clone.firebaseapp.com",
-  projectId: "sweetwater-clone",
-  storageBucket: "sweetwater-clone.appspot.com",
-  messagingSenderId: "680636833830",
-  appId: "1:680636833830:web:f26675d45d659e02aac6e7",
-  measurementId: "G-24K8MV25NH",
+  apiKey: "AIzaSyAx_RnYW15lWWHHfTc3pm3F6rcBx5mPMGM",
+  authDomain: "musicstore-ui-b8216.firebaseapp.com",
+  projectId: "musicstore-ui-b8216",
+  storageBucket: "musicstore-ui-b8216.appspot.com",
+  messagingSenderId: "808585267910",
+  appId: "1:808585267910:web:28879d460d828701a3a5c7",
+  measurementId: "G-F0LQVS926D",
 });
 
 const auth = firebase.auth();
