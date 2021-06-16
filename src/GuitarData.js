@@ -96,7 +96,7 @@ const guitarData = [
     price: 569.99,
     rating: 5,
     img:
-      "https://media.sweetwater.com/api/i/f-webp__q-85__ha-99e18c26c978bb27__hmac-4d54e5e5bc51564c30d818419af025f21a40dd49/images/guitars/59X12VC/084096/084096-body-large.jpg.auto.webp",
+      "https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-300__bg-ffffff__q-85__ha-61c14ff96ef816ad__hmac-34e526ee6f3fa31643052bf1500a83aaa676bd64/images/items/350/59X12VC.jpg.auto.webp",
   },
   {
     id: 10,
@@ -118,7 +118,7 @@ const guitarData = [
     price: 4999.99,
     rating: 5,
     img:
-      "https://media.sweetwater.com/api/i/f-webp__q-85__ha-43eff102a6573bc0__hmac-b32572f57d7e808e96089080e2e9d63152c2f264/images/guitars/JS1CR/210001F2015136/210001F2015136-body-large.jpg.auto.webp",
+      "https://media.sweetwater.com/api/i/f-webp__b-original__w-300__h-300__bg-ffffff__q-85__ha-29f8d225f4e3a47f__hmac-d0c676df935fb8c55f91f9a9779363785d5f3ca3/images/items/350/JS240PSCA.jpg.auto.webp",
   },
   {
     id: 12,
@@ -156,13 +156,13 @@ const guitarData = [
   {
     id: 15,
     brand: "ibanez",
-    name: "Ibanez Prestige S6570SK - Sunset Burst",
+    name: "Ibanez Prestige S6570SK - Blue Burst",
     description:
       "6-string Solidbody Electric Guitar with Mahogany Body, Silky Oak Top, 5-pc Maple/Walnut Neck, Macassar Ebony Fretboard, 1 Single-coil Pickup, 2 Humbucking Pickups, and Tremolo - Sunset Burst",
     price: 1999.99,
     rating: 5,
     img:
-      "https://media.sweetwater.com/api/i/f-webp__q-85__ha-3751d77c075083bf__hmac-893e63195e8dec744588918b6b56468cf19c9d3e/images/guitars/S6570SKSTB/210002F2030662/210002F2030662-body-large.jpg.auto.webp",
+      "https://media.sweetwater.com/api/i/w-300__h-300__b-original__f-webp/images/items/1800/S6521QSLG-xlarge.jpg.auto.webp",
   },
 ];
 

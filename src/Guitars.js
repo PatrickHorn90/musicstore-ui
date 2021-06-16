@@ -100,6 +100,7 @@ const Guitars = () => {
                 label="PRS"
               />
             </FormGroup>
+            <button onClick={(e) => setFilterList([])}>Clear all</button>
           </div>
           <h2>Price Range</h2>
           <div className="filters__body">
