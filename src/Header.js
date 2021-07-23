@@ -5,6 +5,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import logo from "./images/sourwater.png";
 
 function Header() {
   const [{ basket, user }] = useStateValue();
@@ -18,18 +19,14 @@ function Header() {
   return (
     <nav className="header">
       <Link to="/">
-        <img
-          className="header__logo"
-          src="https://media.sweetwater.com/api/i/f-webp__w-380__q-58__ha-1bfd4518cf2cb3fc__hmac-e81b8fa3619f10dff86b35fbec683fe5c6584771/header/logo/sweetwater-logo.png.auto.webp"
-          alt="logo"
-        />
+        <img className="header__logo" src={logo} alt="logo" />
       </Link>
       <form className="header__searchBar">
         <SearchIcon className="header__searchIcon" />
         <input
           type="text"
           className="header__searchInput"
-          placeholder="Search for sweet gear"
+          placeholder="Click on Guitars under Product Categories..."
         />
       </form>
       <div>

@@ -37,22 +37,22 @@ function NavBar() {
           </Link>
         </Select>
       </FormControl>
-      <Link className="navBar__link">
+      <Link to="/whatsnew" className="navBar__link">
         <h4>What's New</h4>
       </Link>
-      <Link className="navBar__link">
+      <Link to="/deals" className="navBar__link">
         <h4>Deals</h4>
       </Link>
-      <Link className="navBar__link">
+      <Link to="/newsandresearch" className="navBar__link">
         <h4>News and Research</h4>
       </Link>
-      <Link className="navBar__link">
+      <Link to="/support" className="navBar__link">
         <h4>Support</h4>
       </Link>
-      <Link className="navBar__link">
+      <Link to="/giveaway" className="navBar__link">
         <h4>Giveaway</h4>
       </Link>
-      <Link className="navBar__link">
+      <Link to="/sweetwatercard" className="navBar__link">
         <h4>Sweetwater Card</h4>
       </Link>
     </div>

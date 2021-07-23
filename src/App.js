@@ -32,7 +32,7 @@ function App() {
     return () => {
       unsubscribe();
     };
-  }, []);
+  }, [dispatch]);
   console.log("USER IS >> ", user);
   return (
     <Router>
@@ -40,6 +40,24 @@ function App() {
         <Header />
         <NavBar />
         <Switch>
+          <Route path="/sweetwatercard">
+            <h1>Sweetwater Card Page</h1>
+          </Route>
+          <Route path="/giveaway">
+            <h1>Giveaway Page </h1>
+          </Route>
+          <Route path="/support">
+            <h1>Support Page</h1>
+          </Route>
+          <Route path="/newsandresearch">
+            <h1>News and Reasearch Page</h1>
+          </Route>
+          <Route path="/deals">
+            <h1>Deals Page</h1>
+          </Route>
+          <Route path="/whatsnew">
+            <h1>What's new page</h1>
+          </Route>
           <Route path="/guitars">
             <Guitars />
           </Route>
