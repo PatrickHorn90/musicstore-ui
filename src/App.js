@@ -37,8 +37,13 @@ function App() {
   return (
     <Router>
       <div className="app">
-        <Header />
-        <NavBar />
+        <div>
+          <Header />
+        </div>
+        <div>
+          <NavBar />
+        </div>
+
         <Switch>
           <Route path="/sweetwatercard">
             <h1>Sweetwater Card Page</h1>

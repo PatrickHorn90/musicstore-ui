@@ -9,6 +9,7 @@
   align-items: center;
   display: flex;
   justify-content: space-around;
+  width: 100%;
 }
 
 .header__links {
